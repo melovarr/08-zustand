@@ -109,7 +109,7 @@ const NoteForm = () => {
           name="title"
           className={css.input}
           onChange={handleChange}
-          defaultValue={draft.title}
+          value={draft.title}
         />
         {alert.title && <div className={css.error}>{alert.title}</div>}
       </div>
@@ -126,7 +126,7 @@ const NoteForm = () => {
           rows={8}
           className={css.textarea}
           onChange={handleChange}
-          defaultValue={draft.content}
+          value={draft.content}
         />
         {alert.content && <div className={css.error}>{alert.content}</div>}
       </div>
@@ -142,7 +142,7 @@ const NoteForm = () => {
           name="tag"
           className={css.select}
           onChange={handleChange}
-          defaultValue={draft.tag}
+          value={draft.tag}
         >
           <option value="Todo">Todo</option>
           <option value="Work">Work</option>

@@ -11,11 +11,11 @@ const NotFoundClient = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCountdown(prev => prev - 1);
-    }, 1000);
+    }, 500);
 
     const timer = setTimeout(() => {
       router.push('/');
-    }, 5000);
+    }, 1000);
 
     return () => {
       clearInterval(interval);
